@@ -1,0 +1,83 @@
+/* .game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin: auto;
+    background-image: url(image/bg1.jpeg); */
+
+
+/* } */
+
+.game1 {
+    width: 600px;
+    height: 200px;
+    margin: auto;
+    border-bottom: 3px solid #654321;
+    background-size: 400px;
+    background-repeat: repeat-x;
+    background-image: url(image/bg1.jpeg);
+    animation: bgmove 20s infinite linear;
+}
+
+@keyframes bgmove {
+    0% {
+        background-position: 100% 0%;
+    }
+    /* 50% {
+        background-position: 50% 0%;
+    } */
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+#terex {
+    width: 50px;
+    height: 50px;
+    background-image: url(image/terex2.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url(image/cactus1.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cactusmove 3s infinite linear;
+}
+
+@keyframes cactusmove {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -10px;
+    }
+}
+
+.jump {
+    animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    /* 30% {
+        top: 130px;
+    } */
+    50% {
+        top: 75px;
+    }
+    /* 80% {
+        top: 130px;
+    } */
+    100% {
+        top: 150px;
+    }
+}

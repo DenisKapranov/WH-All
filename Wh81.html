@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .container {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        h3 {
+            color: #64cacb;
+        }
+
+        input,
+        button,
+        select {
+            border-radius: 5px;
+            border: 1px solid gray;
+            height: 20px;
+            padding: 3px;
+            margin: 3px;
+        }
+
+        form {
+            width: 455px;
+
+        }
+
+        button {
+            color: #64cacb;
+            width: 60px;
+            height: 20px;
+            box-shadow: 0 0 3px black;
+        }
+
+        button:hover {
+            background-color: #c0ceff;
+        }
+
+        #fname,
+        #mname,
+        #lname,
+        #address1,
+        #city,
+        #zip,
+        #state {
+            width: 455px;
+
+        }
+
+        .zip {
+            text-shadow: 0 0 3px black;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+
+    <form>
+
+        <h3 class="id2">Personal information
+            <hr>
+        </h3>
+        <div class="zip">
+
+            <label for="fname">*First name:</label>
+            <input type="text" name="fname" id="fname" required>
+        </div>
+        <div>
+            <label for="mname">Middle Name:</label>
+            <input type="text" name="mname" id="mname">
+        </div>
+
+        <div class="zip">
+            <label for="lname">*Lst name:</label>
+            <input type="text" name="fname" id="lname" required>
+        </div>
+
+
+        <h3 class="id2"> Adress
+            <hr>
+        </h3>
+
+        <div>
+            <label for="address1">Address:</label>
+            <input type="text" id="address1">
+        </div>
+        <div>
+            <label for="city">Ccity or Town:</label>
+            <input type="text" id="city">
+        </div>
+        <div>
+            <label for="state">State:</label>
+            <select id="state">
+                <option selected disabled>Выбор...</option>
+                <option>Киев</option>
+                <option>Харьков</option>
+                <option>Одесса</option>
+                <option>Винница</option>
+                <option>Запорожье</option>
+                <option>Львов</option>
+                <option>Тернополь</option>
+                <option>...</option>
+            </select>
+        </div>
+        <div class="zip">
+            <label for="zip">*Zip:</label>
+            <input type="text" id="zip" required>
+        </div>
+        <div>
+            <button type="submit">Send</button>
+        </div>
+    </form>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>WH4</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat+Alternates:ital,wght@0,500;1,200&family=Praise&display=swap" rel="stylesheet">
+
+    <style>
+         :not(span) {
+            color: green;
+        }
+        
+        p:only-child {
+            background: red;
+        }
+        
+        span {
+            color: #0051ee;
+        }
+        
+         :empty {
+            background-color: rgb(239, 34, 34);
+        }
+        
+        a {
+            text-align: center;
+            font-size: 3px;
+        }
+        
+        td {
+            width: 400px;
+            height: 40px;
+            border-right: 10px solid #fff;
+            border-left: 10px solid #fff;
+            border-radius: 14%;
+            background: #09825f;
+            text-align: center;
+        }
+        
+        a {
+            font-family: 'Praise', cursive;
+            font-size: 30px;
+            text-shadow: #000000 3px 3px 3px;
+        }
+        
+        a:nth-child(odd) {
+            background-color: #09825f;
+        }
+        
+        a:nth-child(even) {
+            background-color: rgba(206, 159, 56, 0.97);
+        }
+        
+        a:visited {
+            color: rgb(108, 143, 163);
+        }
+        
+        a:hover {
+            color: #eab80b;
+        }
+        
+        a:active {
+            color: #51240f;
+        }
+        
+        p:first-child {
+            background-color: #ff0000;
+        }
+        
+        p:only-of-type {
+            border: 5px solid #0051ee;
+        }
+        
+        p::first-letter {
+            font-size: 18px;
+            color: rgb(236, 10, 198);
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><a href="https://google.com">Google</a></td>
+            <td><a href="https://instagram.com">Instagram</a></td>
+            <td><a href="http://lms.cbs.com.ua">CyberBionic</a></td>
+        </tr>
+        <tr>
+            <td><a href=https://www.olx.ua>OLX</a></td>
+            <td><a href=https://auto.ria.com>Auto ria</a></td>
+            <td></td>
+        </tr>
+        <div>
+            <p>Первый параграф</p>
+            <p>Второй параграф и <span>меняется цвет </span></p>
+            <p><span>Третий параграф тоже в span меняет цвет</span></p>
+        </div>
+
+        <div>
+            <p>Единственный параграф получил рамку <span>параграф</span></p>
+        </div>
+        <div>
+            <p>Первый параграф</p>
+            <p>Первый параграф</p>
+        </div>
+
+
+    </table>
+</body>
+
+</html>

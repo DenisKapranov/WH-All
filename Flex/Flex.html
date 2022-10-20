@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox justify-content</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        .item {
+            width: 500px;
+            height: 250px;
+            margin: 20px;
+        }
+        
+        .orange {
+            height: 180px;
+        }
+        
+        .green,
+        .green1,
+        .green2,
+        .green3,
+        .green4 {
+            height: 150px;
+        }
+        
+        .green {
+            flex-shrink: 3;
+        }
+        
+        .green1 {
+            flex-shrink: 3;
+        }
+        
+        .green2 {
+            flex-shrink: 1;
+        }
+        
+        .green3 {
+            flex-shrink: 3;
+        }
+        
+        .green4 {
+            flex-shrink: 3;
+        }
+        
+        .wr {
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            background: #4ad334;
+            color: white;
+            font-size: 35px;
+        }
+        
+        div {
+            position: relative;
+        }
+        
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: rgba(100, 202, 203, 0);
+            color: #000000;
+            text-align: left;
+            text-shadow: 1px 1px 3px black;
+        }
+        
+        footer {
+            width: 100%;
+            height: 40px;
+            background-color: #0466fc;
+            text-shadow: 1px 1px 1px black
+        }
+        
+        p {
+            border-bottom: 3px ridge cadetblue;
+            text-shadow: 1px 1px 1px black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Название сайта
+    </header>
+    <div class="container">
+        <div class="item wr">HOME</div>
+        <div class="item wr">ABOUT</div>
+        <div class="item wr">PORTFOLIO</div>
+        <div class="item wr">CONTROL</div>
+    </div>
+    <p>
+        OUR PORTFOLIO
+    </p>
+    <div class="container">
+        <div class="item"><img src="img/image01.jpg" /></div>
+        <div class="item"><img src="img/image02.jpg" /></div>
+        <div class="item"><img src="img/image03.jpg" /></div>
+    </div>
+    <div class="container">
+        <div class="item orange"><img src="img/image04.jpg" /></div>
+        <div class="item orange"><img src="img/image05.jpg" /></div>
+        <div class="item orange"><img src="img/image06.jpg" /></div>
+        <div class="item orange"><img src="img/image07.jpg" /></div>
+    </div>
+    <div class="container">
+        <div class="item green"><img src="img/image08.jpg" /></div>
+        <div class="item green1"><img src="img/image09.jpg" /></div>
+        <div class="item green2"><img src="img/image10.jpg" /></div>
+        <div class="item green3"><img src="img/image11.jpg" /></div>
+        <div class="item green4"><img src="img/image12.jpg" /></div>
+    </div>
+    <footer>
+        Copyright ©
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #app {
+        border: 3px solid red;
+        width: 150px;
+        text-align: center;
+        background-color: aqua;
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 1px 1px 12px rgb(2, 2, 2);
+    }
+    
+    .temp {
+        text-shadow: 1px 1px 3px red;
+    }
+    
+    .city {
+        font-size: 23px;
+        text-shadow: 1px 1px 3px rgb(2, 2, 2);
+    }
+    
+    ul,
+    li {
+        margin-left: 0;
+        padding-left: 0;
+    }
+</style>
+
+<body>
+    <div id="app"></div>
+    <script type="text/template" id="weatherTemplate">
+        <div class="mainContainer">
+            <div class="wigetTitel">WEATHER</div>
+            <ul class="mainList">
+            </ul>
+            <ul>
+                <li><button id="celsius" disabled>C</button></li>
+                <li><button id="fahrenheits" disabled>F</button></li>
+            </ul>
+        </div>
+    </script>
+    <script src="weatherControl.js" defer></script>
+    <footer>
+        1
+    </footer>
+</body>
+
+</html>

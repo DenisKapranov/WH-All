@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+
+    <style>
+        #color-sample {
+            width: 250px;
+            height: 70px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="color-sample"></div>
+    <p>Цвет: <span id="output"></span></p>
+
+    <script>
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+
+        let colorSampleDiv = document.querySelector("#color-sample");
+        colorSampleDiv.style.backgroundColor = getRandomColor();
+        let outputDiv = document.querySelector("#output");
+        outputDiv.innerHTML = `<b>${colorSampleDiv.style.backgroundColor}</b>`;
+    </script>
+</body>
+
+</html>
